@@ -1,0 +1,218 @@
+# Story 4.3: Graceful Fallback for Gemini API Rate Limit Errors
+
+Status: done
+
+## Story
+
+As a user, I want the application to handle Gemini API rate limit errors gracefully, so that I still receive useful safety guidance even when the AI service is temporarily unavailable.
+
+## Acceptance Criteria
+
+1. **Given** the Gemini API returns a 429 rate limit error,
+2. **When** the `get_explanation` method is called,
+3. **Then** the application must catch the `AppErrorWrapper` with error code `GEMINI_API_ERROR` containing "429",
+4. **And** display a user-friendly warning message indicating the AI service is temporarily unavailable,
+5. **And** show the specific error code (429 - Rate Limit Exceeded) for debugging purposes,
+6. **And** provide context-aware fallback safety guidance based on the heuristic engine's decision (GO/MAYBE/NO-GO),
+7. **And** the fallback guidance must be comprehensive, actionable, and maintain the same safety standards as AI-generated explanations,
+8. **And** the application must continue to function normally, displaying all other assessment results (weather data, safety score, heuristic decision).
+
+## Dev Notes
+
+**DEV AGENT GUARDRAILS:**
+
+### Technical Requirements
+
+#### Error Detection and Handling
+
+- In `app.py`, wrap the `gemini_client.get_explanation(gemini_input)` call in a try-except block specifically for `AppErrorWrapper`.
+- Check if the caught exception has `error_code == "GEMINI_API_ERROR"` AND the error message contains "429".
+- If both conditions are met, trigger the graceful fallback flow instead of re-raising the exception.
+
+#### AppErrorWrapper Enhancement
+
+- Update `utils/app_error.py` to ensure the `AppErrorWrapper` class properly implements `__str__` method:
+  ```python
+  class AppErrorWrapper(Exception):
+      def __init__(self, error_code, user_message):
+          self.error_code = error_code
+          self.user_message = user_message
+          super().__init__(user_message)
+      
+      def __str__(self):
+          return self.user_message
+  ```
+- This ensures error messages are properly preserved for detection.
+
+#### User Interface Display
+
+When a 429 error is detected, display the following UI elements in order:
+
+1. **Warning Banner:**
+   ```python
+   st.warning("⚠️ **AI Service Temporarily Unavailable**")
+   ```
+
+2. **Error Details Caption:**
+   ```python
+   st.caption(f"🔍 Error Code: 429 - Rate Limit Exceeded | Error Type: {e.error_code}")
+   ```
+
+3. **Info Message:**
+   ```python
+   st.info("💡 Showing general safety guidance based on conditions assessment...")
+   ```
+
+#### Context-Aware Fallback Messages
+
+Based on the `heuristic_result.decision` value, provide one of three comprehensive fallback messages:
+
+**For "GO" Decision:**
+```
+**Conditions appear favorable for outdoor activities.** 
+The current weather metrics suggest safe conditions. However, always:
+
+✅ Check the latest weather updates before departing
+
+✅ Inform someone of your plans and expected return time
+
+✅ Pack essential safety gear (first aid, navigation, communication)
+
+✅ Bring layers and rain protection - weather can change quickly
+
+✅ Monitor conditions throughout your activity
+
+Stay alert to any weather changes and trust your judgment. 
+If conditions deteriorate, don't hesitate to turn back.
+```
+
+**For "MAYBE" Decision:**
+```
+**Conditions are borderline - proceed with caution.** 
+Our analysis indicates marginal weather conditions. Consider these recommendations:
+
+⚠️ Re-check weather forecasts from multiple sources
+
+⚠️ Have a backup plan and clear turnaround criteria
+
+⚠️ Ensure all participants are experienced and properly equipped
+
+⚠️ Start early to allow time for changing conditions
+
+⚠️ Be prepared to cancel or turn back if conditions worsen
+
+Borderline conditions require extra vigilance. It's always better to postpone 
+than to take unnecessary risks. Your safety is the priority.
+```
+
+**For "NO-GO" Decision:**
+```
+**Conditions are not favorable - outdoor activities not recommended.** 
+Our safety analysis indicates significant risks. Here's why this matters:
+
+❌ Current weather metrics exceed safe thresholds
+
+❌ High risk of dangerous conditions during your planned activity
+
+❌ Increased chance of weather-related incidents
+
+**Recommended Actions:**
+
+• Postpone your outdoor plans to a safer day
+
+• Consider alternative indoor activities
+
+• If you must go out, take extreme precautions and stay in sheltered areas
+
+• Monitor weather updates for improvement
+
+Remember: Mountains, trails, and outdoor activities will always be there. 
+Your safety cannot be compromised.
+```
+
+#### GeminiOutput Creation
+
+- After determining the appropriate fallback message, create a `GeminiOutput` object:
+  ```python
+  from services.models import GeminiOutput
+  gemini_output = GeminiOutput(explanation=fallback_message)
+  ```
+- This ensures the rest of the application flow continues normally with the fallback content.
+
+### Architecture Compliance
+
+- **Error Handling:** Follows the existing `AppErrorWrapper` pattern for consistent error management.
+- **Service Layer:** The fallback is implemented at the application layer (`app.py`), allowing the service layer (`GeminiLLMClient`) to remain focused on API interaction.
+- **User Experience:** Maintains a professional, informative interface even during API failures.
+- **Data Flow:** The fallback seamlessly integrates with the existing data flow, ensuring all other features (report generation, weather display, heuristic results) continue to function.
+
+### Library/Framework Requirements
+
+- **Streamlit:** Uses `st.warning`, `st.caption`, and `st.info` for UI display.
+- **Existing Error Handling:** Leverages the `AppErrorWrapper` from `utils/app_error.py`.
+
+### File Structure Requirements
+
+- Primary implementation in `app.py` (within the Gemini API call section)
+- Minor enhancement to `utils/app_error.py` (adding `__str__` method)
+
+### Testing Requirements
+
+#### Manual Testing
+
+1. **Trigger 429 Error:**
+   - Disable "Use Mock Data" in the sidebar
+   - Make multiple rapid assessment requests to exceed the Gemini API free tier quota
+   - Verify the graceful fallback UI appears
+
+2. **Verify Each Decision Type:**
+   - Test with locations/dates that trigger "GO" decisions - verify GO fallback message
+   - Test with locations/dates that trigger "MAYBE" decisions - verify MAYBE fallback message
+   - Test with locations/dates that trigger "NO-GO" decisions - verify NO-GO fallback message
+
+3. **Verify Continued Functionality:**
+   - Confirm weather data still displays correctly
+   - Confirm heuristic decision and safety score still display
+   - Confirm the assessment report is still generated and logged
+
+4. **Verify Other Errors Still Raise:**
+   - Test with invalid API keys or other error conditions
+   - Verify non-429 errors still display the standard error UI
+
+#### Expected Behavior
+
+- ✅ No red error boxes for 429 errors
+- ✅ Friendly yellow/blue informational messages
+- ✅ Comprehensive safety guidance appropriate to conditions
+- ✅ All other UI elements display normally
+- ✅ Professional appearance demonstrating robust error handling
+
+### Project Context Reference
+
+For broader project context, refer to:
+[Project Context Document](../../_bmad-output/planning-artifacts/project-context.md)
+
+### Related Stories
+
+- **Story 4.1:** LLM-Powered Conversational Explanation - The primary Gemini integration that this fallback supports
+
+## Dev Agent Record
+
+### Agent Model Used
+
+GitHub Copilot (Claude Sonnet 4.5)
+
+### Completion Notes List
+
+- Implemented graceful fallback handling for Gemini API 429 rate limit errors in `app.py`
+- Enhanced `AppErrorWrapper` in `utils/app_error.py` to properly preserve error messages via `__str__` method
+- Created three context-aware fallback messages aligned with heuristic decisions (GO/MAYBE/NO-GO)
+- Each fallback message provides comprehensive, actionable safety guidance
+- User interface displays professional warning, error details, and informational messages
+- Fallback seamlessly integrates with existing data flow - assessment continues normally
+- Tested with real 429 errors to verify user experience
+- Version tagged as v3.4.0
+
+### File List
+- `app.py` (added graceful fallback try-except block around Gemini API call)
+- `utils/app_error.py` (added `__str__` method to `AppErrorWrapper`)

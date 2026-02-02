@@ -1,0 +1,1214 @@
+[
+    {
+        "report_id": "rep_679d6b9a62d341669501bc0a7b919aa6",
+        "assessment_timestamp_utc": "2026-01-26T17:21:16.206851+00:00",
+        "location_name": "Coventry",
+        "assessment_date": "2026-01-26",
+        "weather_data": {
+            "location": {
+                "name": "Coventry",
+                "region": "West Midlands",
+                "country": "United Kingdom"
+            },
+            "current": {
+                "temp_c": 2.8,
+                "temp_f": 37.0,
+                "feelslike_c": -0.6,
+                "feelslike_f": 30.9,
+                "humidity": 94,
+                "wind_mph": 8.1,
+                "wind_kph": 13.0,
+                "wind_degree": 51,
+                "wind_dir": "NE",
+                "precip_mm": 0.0,
+                "precip_in": 0.0,
+                "condition": {
+                    "text": "Partly Cloudy ",
+                    "icon": "//cdn.weatherapi.com/weather/64x64/night/116.png",
+                    "code": 1003
+                },
+                "uv": 0.0,
+                "is_day": 0
+            },
+            "forecast": {
+                "forecastday": [
+                    {
+                        "day": {
+                            "daily_chance_of_rain": 94
+                        },
+                        "date": "2026-01-26"
+                    }
+                ]
+            }
+        },
+        "heuristic_output": {
+            "decision": "MAYBE",
+            "weighted_score": 60.0,
+            "notes": "Conditions are marginal. Proceed with caution.",
+            "hard_stop": false,
+            "hard_stop_reasons": [],
+            "available_metric_count": 4,
+            "missing_metrics": [],
+            "metric_scores": {
+                "wind_speed_score": 100,
+                "thermal_stress_score": 100,
+                "uv_score": 100,
+                "precip_score": 0
+            },
+            "metric_categories": {
+                "wind_speed_category": "GREEN",
+                "thermal_stress_category": "GREEN",
+                "uv_category": "GREEN",
+                "precip_rate_category": "RED",
+                "precip_prob_category": null
+            }
+        },
+        "ai_explanation": {
+            "explanation": "Today's conditions in Coventry are marginal for outdoor activities. With a high 94% chance of rain looming and chilly temperatures (2.8\u00b0C, feeling like -0.6\u00b0C) accompanied by an 8.1 mph wind, we suggest you proceed with caution and be well-prepared for cold and wet weather."
+        }
+    },
+    {
+        "report_id": "rep_118735cacbd942e68477a3c6225d3f58",
+        "assessment_timestamp_utc": "2026-01-26T17:21:35.362938+00:00",
+        "location_name": "Lancaster",
+        "assessment_date": "2026-01-26",
+        "weather_data": {
+            "location": {
+                "name": "Lancaster",
+                "region": "California",
+                "country": "United States of America"
+            },
+            "current": {
+                "temp_c": 4.4,
+                "temp_f": 39.9,
+                "feelslike_c": 3.0,
+                "feelslike_f": 37.4,
+                "humidity": 57,
+                "wind_mph": 2.5,
+                "wind_kph": 4.0,
+                "wind_degree": 65,
+                "wind_dir": "ENE",
+                "precip_mm": 0.0,
+                "precip_in": 0.0,
+                "condition": {
+                    "text": "Clear ",
+                    "icon": "//cdn.weatherapi.com/weather/64x64/night/113.png",
+                    "code": 1000
+                },
+                "uv": 0.0,
+                "is_day": 0
+            },
+            "forecast": {
+                "forecastday": [
+                    {
+                        "day": {
+                            "daily_chance_of_rain": 0
+                        },
+                        "date": "2026-01-26"
+                    }
+                ]
+            }
+        },
+        "heuristic_output": {
+            "decision": "GO",
+            "weighted_score": 100.0,
+            "notes": "Conditions are favorable.",
+            "hard_stop": false,
+            "hard_stop_reasons": [],
+            "available_metric_count": 4,
+            "missing_metrics": [],
+            "metric_scores": {
+                "wind_speed_score": 100,
+                "thermal_stress_score": 100,
+                "uv_score": 100,
+                "precip_score": 100
+            },
+            "metric_categories": {
+                "wind_speed_category": "GREEN",
+                "thermal_stress_category": "GREEN",
+                "uv_category": "GREEN",
+                "precip_rate_category": "GREEN",
+                "precip_prob_category": null
+            }
+        },
+        "ai_explanation": {
+            "explanation": "Great news for your outdoor plans in Lancaster! The conditions are very favorable for heading outside, with no precipitation expected and only a light breeze making it a perfect dry and calm day, just remember to dress warmly for the cool temperature."
+        }
+    },
+    {
+        "report_id": "rep_b90434fd9ff44431bb7deacae603d3c3",
+        "assessment_timestamp_utc": "2026-01-27T09:39:39.298939+00:00",
+        "location_name": "Coventry",
+        "assessment_date": "2026-01-27",
+        "weather_data": {
+            "location": {
+                "name": "Coventry",
+                "region": "West Midlands",
+                "country": "United Kingdom"
+            },
+            "current": {
+                "temp_c": 4.4,
+                "temp_f": 40.0,
+                "feelslike_c": -1.3,
+                "feelslike_f": 29.7,
+                "humidity": 94,
+                "wind_mph": 23.3,
+                "wind_kph": 37.4,
+                "wind_degree": 106,
+                "wind_dir": "ESE",
+                "precip_mm": 3.1,
+                "precip_in": 0.12,
+                "condition": {
+                    "text": "Moderate rain",
+                    "icon": "//cdn.weatherapi.com/weather/64x64/night/302.png",
+                    "code": 1189
+                },
+                "uv": 0.0,
+                "is_day": 0
+            },
+            "forecast": {
+                "forecastday": [
+                    {
+                        "day": {
+                            "daily_chance_of_rain": 100
+                        },
+                        "date": "2026-01-27"
+                    }
+                ]
+            }
+        },
+        "heuristic_output": {
+            "decision": "MAYBE",
+            "weighted_score": 70.0,
+            "notes": "Conditions are marginal. Proceed with caution and be prepared for changes.",
+            "hard_stop": false,
+            "hard_stop_reasons": [],
+            "available_metric_count": 0,
+            "missing_metrics": [],
+            "metric_scores": {
+                "wind_speed_score": null,
+                "thermal_stress_score": null,
+                "uv_score": null,
+                "precip_score": null
+            },
+            "metric_categories": {
+                "wind_speed_category": null,
+                "thermal_stress_category": null,
+                "uv_category": null,
+                "precip_rate_category": null,
+                "precip_prob_category": null
+            }
+        },
+        "ai_explanation": {
+            "explanation": "Outdoor activities in Coventry today are marginal. With a real feel temperature of -1.3\u00b0C, strong 23.3 mph winds, and a 100% chance of rain, it's essential to proceed with caution and be fully prepared for very challenging, cold, and wet conditions."
+        }
+    },
+    {
+        "report_id": "rep_4991edc32dee4347a7111cfd994439bf",
+        "assessment_timestamp_utc": "2026-01-27T17:35:20.606844+00:00",
+        "location_name": "Coventry",
+        "assessment_date": "2026-01-27",
+        "weather_data": {
+            "location": {
+                "name": "Coventry",
+                "region": "West Midlands",
+                "country": "United Kingdom"
+            },
+            "current": {
+                "temp_c": 4.4,
+                "feelslike_c": -1.3,
+                "wind_mph": 23.3,
+                "precip_mm": 3.1,
+                "uv": 0.0
+            },
+            "forecast": {
+                "forecastday": [
+                    {
+                        "date": "2026-01-27",
+                        "day": {
+                            "maxtemp_c": 8.5,
+                            "mintemp_c": 4.4,
+                            "daily_chance_of_rain": 100
+                        }
+                    }
+                ]
+            }
+        },
+        "heuristic_output": {
+            "decision": "MAYBE",
+            "notes": "Conditions are marginal. Proceed with caution and be prepared for changes.",
+            "weighted_score": 70.0,
+            "hard_stop_reasons": [],
+            "reasons": []
+        },
+        "ai_explanation": {
+            "explanation": "**Conditions are borderline - proceed with caution.** Our analysis indicates marginal weather conditions. Consider these recommendations:\n\n\u26a0\ufe0f Re-check weather forecasts from multiple sources\n\u26a0\ufe0f Have a backup plan and clear turnaround criteria\n\u26a0\ufe0f Ensure all participants are experienced and properly equipped\n\u26a0\ufe0f Start early to allow time for changing conditions\n\u26a0\ufe0f Be prepared to cancel or turn back if conditions worsen\n\nBorderline conditions require extra vigilance. It's always better to postpone than to take unnecessary risks. Your safety is the priority."
+        }
+    },
+    {
+        "report_id": "rep_2e028ae068c54a75b9986442ab9a3492",
+        "assessment_timestamp_utc": "2026-01-27T17:37:04.650812+00:00",
+        "location_name": "Jakarta",
+        "assessment_date": "2026-01-27",
+        "weather_data": {
+            "location": {
+                "name": "Jakarta",
+                "region": "Jakarta Raya",
+                "country": "Indonesia"
+            },
+            "current": {
+                "temp_c": 26.8,
+                "feelslike_c": 29.6,
+                "wind_mph": 2.5,
+                "precip_mm": 0.02,
+                "uv": 0.0
+            },
+            "forecast": {
+                "forecastday": [
+                    {
+                        "date": "2026-01-27",
+                        "day": {
+                            "maxtemp_c": 28.8,
+                            "mintemp_c": 25.9,
+                            "daily_chance_of_rain": 99
+                        }
+                    }
+                ]
+            }
+        },
+        "heuristic_output": {
+            "decision": "GO",
+            "notes": "Conditions are favorable for your activity.",
+            "weighted_score": 82.5,
+            "hard_stop_reasons": [],
+            "reasons": []
+        },
+        "ai_explanation": {
+            "explanation": "**Conditions appear favorable for outdoor activities.** The current weather metrics suggest safe conditions. However, always:\n\n\u2705 Check the latest weather updates before departing\n\u2705 Inform someone of your plans and expected return time\n\u2705 Pack essential safety gear (first aid, navigation, communication)\n\u2705 Bring layers and rain protection - weather can change quickly\n\u2705 Monitor conditions throughout your activity\n\nStay alert to any weather changes and trust your judgment. If conditions deteriorate, don't hesitate to turn back."
+        }
+    },
+    {
+        "report_id": "rep_df435b14661545df9cec014d99485204",
+        "assessment_timestamp_utc": "2026-01-27T17:38:43.930676+00:00",
+        "location_name": "Coventry",
+        "assessment_date": "2026-01-27",
+        "weather_data": {
+            "location": {
+                "name": "Coventry",
+                "region": "West Midlands",
+                "country": "United Kingdom"
+            },
+            "current": {
+                "temp_c": 4.4,
+                "feelslike_c": -1.3,
+                "wind_mph": 23.3,
+                "precip_mm": 3.1,
+                "uv": 0.0
+            },
+            "forecast": {
+                "forecastday": [
+                    {
+                        "date": "2026-01-27",
+                        "day": {
+                            "maxtemp_c": 8.5,
+                            "mintemp_c": 4.4,
+                            "daily_chance_of_rain": 100
+                        }
+                    }
+                ]
+            }
+        },
+        "heuristic_output": {
+            "decision": "MAYBE",
+            "notes": "Conditions are marginal. Proceed with caution and be prepared for changes.",
+            "weighted_score": 70.0,
+            "hard_stop_reasons": [],
+            "reasons": []
+        },
+        "ai_explanation": {
+            "explanation": "**Conditions are borderline - proceed with caution.** Our analysis indicates marginal weather conditions. Consider these recommendations:\n\n\u26a0\ufe0f Re-check weather forecasts from multiple sources\n\u26a0\ufe0f Have a backup plan and clear turnaround criteria\n\u26a0\ufe0f Ensure all participants are experienced and properly equipped\n\u26a0\ufe0f Start early to allow time for changing conditions\n\u26a0\ufe0f Be prepared to cancel or turn back if conditions worsen\n\nBorderline conditions require extra vigilance. It's always better to postpone than to take unnecessary risks. Your safety is the priority."
+        }
+    },
+    {
+        "report_id": "rep_b2aedfb7f7e4435a8fff4cdf8f463f5f",
+        "assessment_timestamp_utc": "2026-01-27T17:41:05.818318+00:00",
+        "location_name": "Coventry",
+        "assessment_date": "2026-01-27",
+        "weather_data": {
+            "location": {
+                "name": "Coventry",
+                "region": "West Midlands",
+                "country": "United Kingdom"
+            },
+            "current": {
+                "temp_c": 4.4,
+                "feelslike_c": -1.3,
+                "wind_mph": 23.3,
+                "precip_mm": 3.1,
+                "uv": 0.0
+            },
+            "forecast": {
+                "forecastday": [
+                    {
+                        "date": "2026-01-27",
+                        "day": {
+                            "maxtemp_c": 8.5,
+                            "mintemp_c": 4.4,
+                            "daily_chance_of_rain": 100
+                        }
+                    }
+                ]
+            }
+        },
+        "heuristic_output": {
+            "decision": "MAYBE",
+            "notes": "Conditions are marginal. Proceed with caution and be prepared for changes.",
+            "weighted_score": 70.0,
+            "hard_stop_reasons": [],
+            "reasons": []
+        },
+        "ai_explanation": {
+            "explanation": "**Conditions are borderline - proceed with caution.** Our analysis indicates marginal weather conditions. Consider these recommendations:\n\n\u26a0\ufe0f Re-check weather forecasts from multiple sources\n\u26a0\ufe0f Have a backup plan and clear turnaround criteria\n\u26a0\ufe0f Ensure all participants are experienced and properly equipped\n\u26a0\ufe0f Start early to allow time for changing conditions\n\u26a0\ufe0f Be prepared to cancel or turn back if conditions worsen\n\nBorderline conditions require extra vigilance. It's always better to postpone than to take unnecessary risks. Your safety is the priority."
+        }
+    },
+    {
+        "report_id": "rep_71cda6aa7c4947779cd9a8ed12ad85a9",
+        "assessment_timestamp_utc": "2026-01-27T17:41:14.488490+00:00",
+        "location_name": "Jakarta",
+        "assessment_date": "2026-01-27",
+        "weather_data": {
+            "location": {
+                "name": "Jakarta",
+                "region": "Jakarta Raya",
+                "country": "Indonesia"
+            },
+            "current": {
+                "temp_c": 26.8,
+                "feelslike_c": 29.6,
+                "wind_mph": 2.5,
+                "precip_mm": 0.02,
+                "uv": 0.0
+            },
+            "forecast": {
+                "forecastday": [
+                    {
+                        "date": "2026-01-27",
+                        "day": {
+                            "maxtemp_c": 28.8,
+                            "mintemp_c": 25.9,
+                            "daily_chance_of_rain": 99
+                        }
+                    }
+                ]
+            }
+        },
+        "heuristic_output": {
+            "decision": "GO",
+            "notes": "Conditions are favorable for your activity.",
+            "weighted_score": 82.5,
+            "hard_stop_reasons": [],
+            "reasons": []
+        },
+        "ai_explanation": {
+            "explanation": "**Conditions appear favorable for outdoor activities.** The current weather metrics suggest safe conditions. However, always:\n\n\u2705 Check the latest weather updates before departing\n\u2705 Inform someone of your plans and expected return time\n\u2705 Pack essential safety gear (first aid, navigation, communication)\n\u2705 Bring layers and rain protection - weather can change quickly\n\u2705 Monitor conditions throughout your activity\n\nStay alert to any weather changes and trust your judgment. If conditions deteriorate, don't hesitate to turn back."
+        }
+    },
+    {
+        "report_id": "rep_e0dc4475c6f34ed5a3a7b49655e35a37",
+        "assessment_timestamp_utc": "2026-01-27T17:41:57.184372+00:00",
+        "location_name": "Coventry",
+        "assessment_date": "2026-01-27",
+        "weather_data": {
+            "location": {
+                "name": "Coventry",
+                "region": "West Midlands",
+                "country": "United Kingdom"
+            },
+            "current": {
+                "temp_c": 4.4,
+                "feelslike_c": -1.3,
+                "wind_mph": 23.3,
+                "precip_mm": 3.1,
+                "uv": 0.0
+            },
+            "forecast": {
+                "forecastday": [
+                    {
+                        "date": "2026-01-27",
+                        "day": {
+                            "maxtemp_c": 8.5,
+                            "mintemp_c": 4.4,
+                            "daily_chance_of_rain": 100
+                        }
+                    }
+                ]
+            }
+        },
+        "heuristic_output": {
+            "decision": "MAYBE",
+            "notes": "Conditions are marginal. Proceed with caution and be prepared for changes.",
+            "weighted_score": 70.0,
+            "hard_stop_reasons": [],
+            "reasons": []
+        },
+        "ai_explanation": {
+            "explanation": "**Conditions are borderline - proceed with caution.** Our analysis indicates marginal weather conditions. Consider these recommendations:\n\n\u26a0\ufe0f Re-check weather forecasts from multiple sources\n\n\u26a0\ufe0f Have a backup plan and clear turnaround criteria\n\n\u26a0\ufe0f Ensure all participants are experienced and properly equipped\n\n\u26a0\ufe0f Start early to allow time for changing conditions\n\n\u26a0\ufe0f Be prepared to cancel or turn back if conditions worsen\n\nBorderline conditions require extra vigilance. It's always better to postpone than to take unnecessary risks. Your safety is the priority."
+        }
+    },
+    {
+        "report_id": "rep_d064b4b8588f4f49a6537ae9509fe5f4",
+        "assessment_timestamp_utc": "2026-01-27T17:42:15.695556+00:00",
+        "location_name": "Jakarta",
+        "assessment_date": "2026-01-27",
+        "weather_data": {
+            "location": {
+                "name": "Jakarta",
+                "region": "Jakarta Raya",
+                "country": "Indonesia"
+            },
+            "current": {
+                "temp_c": 26.8,
+                "feelslike_c": 29.6,
+                "wind_mph": 2.5,
+                "precip_mm": 0.02,
+                "uv": 0.0
+            },
+            "forecast": {
+                "forecastday": [
+                    {
+                        "date": "2026-01-27",
+                        "day": {
+                            "maxtemp_c": 28.8,
+                            "mintemp_c": 25.9,
+                            "daily_chance_of_rain": 99
+                        }
+                    }
+                ]
+            }
+        },
+        "heuristic_output": {
+            "decision": "GO",
+            "notes": "Conditions are favorable for your activity.",
+            "weighted_score": 82.5,
+            "hard_stop_reasons": [],
+            "reasons": []
+        },
+        "ai_explanation": {
+            "explanation": "**Conditions appear favorable for outdoor activities.** The current weather metrics suggest safe conditions. However, always:\n\n\u2705 Check the latest weather updates before departing\n\n\u2705 Inform someone of your plans and expected return time\n\n\u2705 Pack essential safety gear (first aid, navigation, communication)\n\n\u2705 Bring layers and rain protection - weather can change quickly\n\n\u2705 Monitor conditions throughout your activity\n\nStay alert to any weather changes and trust your judgment. If conditions deteriorate, don't hesitate to turn back."
+        }
+    },
+    {
+        "report_id": "rep_d56c502c91bf4dc0949fd8ce0acc3382",
+        "assessment_timestamp_utc": "2026-01-27T18:20:28.679597+00:00",
+        "location_name": "Coventry",
+        "assessment_date": "2026-01-27",
+        "weather_data": {
+            "location": {
+                "name": "Coventry",
+                "region": "West Midlands",
+                "country": "United Kingdom"
+            },
+            "current": {
+                "temp_c": 4.4,
+                "feelslike_c": -1.3,
+                "wind_mph": 23.3,
+                "precip_mm": 3.1,
+                "uv": 0.0
+            },
+            "forecast": {
+                "forecastday": [
+                    {
+                        "date": "2026-01-27",
+                        "day": {
+                            "maxtemp_c": 8.5,
+                            "mintemp_c": 4.4,
+                            "daily_chance_of_rain": 100
+                        }
+                    }
+                ]
+            }
+        },
+        "heuristic_output": {
+            "decision": "MAYBE",
+            "notes": "Conditions are marginal. Proceed with caution and be prepared for changes.",
+            "weighted_score": 70.0,
+            "hard_stop_reasons": [],
+            "reasons": []
+        },
+        "ai_explanation": {
+            "explanation": "**Conditions are borderline - proceed with caution.** Our analysis indicates marginal weather conditions. Consider these recommendations:\n\n\u26a0\ufe0f Re-check weather forecasts from multiple sources\n\n\u26a0\ufe0f Have a backup plan and clear turnaround criteria\n\n\u26a0\ufe0f Ensure all participants are experienced and properly equipped\n\n\u26a0\ufe0f Start early to allow time for changing conditions\n\n\u26a0\ufe0f Be prepared to cancel or turn back if conditions worsen\n\nBorderline conditions require extra vigilance. It's always better to postpone than to take unnecessary risks. Your safety is the priority."
+        }
+    },
+    {
+        "report_id": "rep_4398736bf4a04e8a9d3cdb01418ef25a",
+        "assessment_timestamp_utc": "2026-01-27T18:20:36.684410+00:00",
+        "location_name": "Paris",
+        "assessment_date": "2026-01-27",
+        "weather_data": {
+            "location": {
+                "name": "Paris",
+                "region": "Ile-de-France",
+                "country": "France"
+            },
+            "current": {
+                "temp_c": 5.5,
+                "feelslike_c": 2.1,
+                "wind_mph": 10.1,
+                "precip_mm": 0.0,
+                "uv": 0.0
+            },
+            "forecast": {
+                "forecastday": [
+                    {
+                        "date": "2026-01-27",
+                        "day": {
+                            "maxtemp_c": 8.5,
+                            "mintemp_c": 5.3,
+                            "daily_chance_of_rain": 99
+                        }
+                    }
+                ]
+            }
+        },
+        "heuristic_output": {
+            "decision": "GO",
+            "notes": "Conditions are favorable for your activity.",
+            "weighted_score": 100.0,
+            "hard_stop_reasons": [],
+            "reasons": []
+        },
+        "ai_explanation": {
+            "explanation": "**Conditions appear favorable for outdoor activities.** The current weather metrics suggest safe conditions. However, always:\n\n\u2705 Check the latest weather updates before departing\n\n\u2705 Inform someone of your plans and expected return time\n\n\u2705 Pack essential safety gear (first aid, navigation, communication)\n\n\u2705 Bring layers and rain protection - weather can change quickly\n\n\u2705 Monitor conditions throughout your activity\n\nStay alert to any weather changes and trust your judgment. If conditions deteriorate, don't hesitate to turn back."
+        }
+    },
+    {
+        "report_id": "rep_ebb2d817326c4491b9930f6f4a7e4447",
+        "assessment_timestamp_utc": "2026-01-27T18:25:54.902303+00:00",
+        "location_name": "Coventry",
+        "assessment_date": "2026-01-27",
+        "weather_data": {
+            "location": {
+                "name": "Coventry",
+                "region": "West Midlands",
+                "country": "United Kingdom"
+            },
+            "current": {
+                "temp_c": 4.4,
+                "feelslike_c": -1.3,
+                "wind_mph": 23.3,
+                "precip_mm": 3.1,
+                "uv": 0.0
+            },
+            "forecast": {
+                "forecastday": [
+                    {
+                        "date": "2026-01-27",
+                        "day": {
+                            "maxtemp_c": 8.5,
+                            "mintemp_c": 4.4,
+                            "daily_chance_of_rain": 100
+                        }
+                    }
+                ]
+            }
+        },
+        "heuristic_output": {
+            "decision": "MAYBE",
+            "notes": "Conditions are marginal. Proceed with caution and be prepared for changes.",
+            "weighted_score": 70.0,
+            "hard_stop_reasons": [],
+            "reasons": []
+        },
+        "ai_explanation": {
+            "explanation": "**Conditions are borderline - proceed with caution.** Our analysis indicates marginal weather conditions. Consider these recommendations:\n\n\u26a0\ufe0f Re-check weather forecasts from multiple sources\n\n\u26a0\ufe0f Have a backup plan and clear turnaround criteria\n\n\u26a0\ufe0f Ensure all participants are experienced and properly equipped\n\n\u26a0\ufe0f Start early to allow time for changing conditions\n\n\u26a0\ufe0f Be prepared to cancel or turn back if conditions worsen\n\nBorderline conditions require extra vigilance. It's always better to postpone than to take unnecessary risks. Your safety is the priority."
+        }
+    },
+    {
+        "report_id": "rep_ca6bf6ef4c6a4575a9632ed8af00ba38",
+        "assessment_timestamp_utc": "2026-01-27T18:26:44.094423+00:00",
+        "location_name": "Coventry",
+        "assessment_date": "2026-01-27",
+        "weather_data": {
+            "location": {
+                "name": "Coventry",
+                "region": "West Midlands",
+                "country": "United Kingdom"
+            },
+            "current": {
+                "temp_c": 4.4,
+                "feelslike_c": -1.3,
+                "wind_mph": 23.3,
+                "precip_mm": 3.1,
+                "uv": 0.0
+            },
+            "forecast": {
+                "forecastday": [
+                    {
+                        "date": "2026-01-27",
+                        "day": {
+                            "maxtemp_c": 8.5,
+                            "mintemp_c": 4.4,
+                            "daily_chance_of_rain": 100
+                        }
+                    }
+                ]
+            }
+        },
+        "heuristic_output": {
+            "decision": "MAYBE",
+            "notes": "Conditions are marginal. Proceed with caution and be prepared for changes.",
+            "weighted_score": 70.0,
+            "hard_stop_reasons": [],
+            "reasons": []
+        },
+        "ai_explanation": {
+            "explanation": "**Conditions are borderline - proceed with caution.** Our analysis indicates marginal weather conditions. Consider these recommendations:\n\n\u26a0\ufe0f Re-check weather forecasts from multiple sources\n\n\u26a0\ufe0f Have a backup plan and clear turnaround criteria\n\n\u26a0\ufe0f Ensure all participants are experienced and properly equipped\n\n\u26a0\ufe0f Start early to allow time for changing conditions\n\n\u26a0\ufe0f Be prepared to cancel or turn back if conditions worsen\n\nBorderline conditions require extra vigilance. It's always better to postpone than to take unnecessary risks. Your safety is the priority."
+        }
+    },
+    {
+        "report_id": "rep_283689fb286b4f528148763f76191976",
+        "assessment_timestamp_utc": "2026-01-27T20:52:13.677649+00:00",
+        "location_name": "Coventry",
+        "assessment_date": "2026-01-27",
+        "weather_data": {
+            "location": {
+                "name": "Coventry",
+                "region": "West Midlands",
+                "country": "United Kingdom"
+            },
+            "current": {
+                "temp_c": 4.4,
+                "feelslike_c": -1.3,
+                "wind_mph": 23.3,
+                "precip_mm": 3.1,
+                "uv": 0.0
+            },
+            "forecast": {
+                "forecastday": [
+                    {
+                        "date": "2026-01-27",
+                        "day": {
+                            "maxtemp_c": 8.5,
+                            "mintemp_c": 4.1,
+                            "daily_chance_of_rain": 100
+                        }
+                    }
+                ]
+            }
+        },
+        "heuristic_output": {
+            "decision": "MAYBE",
+            "notes": "Conditions are marginal. Proceed with caution and be prepared for changes.",
+            "weighted_score": 70.0,
+            "hard_stop_reasons": [],
+            "reasons": []
+        },
+        "ai_explanation": {
+            "explanation": "The pre-calculated guideline suggests a \"MAYBE\" for outdoor activities due to marginal conditions. With cold temperatures (4.4\u00b0C, feeling like -1.3\u00b0C), strong winds (23.3 mph), and a 100% chance of rain, you'll face a blustery, wet, and significantly colder experience in Coventry. Proceed with caution and ensure you are thoroughly prepared for the elements."
+        }
+    },
+    {
+        "report_id": "rep_804e3464ec0e4ca68a0574629d185c22",
+        "assessment_timestamp_utc": "2026-01-27T20:52:55.140639+00:00",
+        "location_name": "Jakarta",
+        "assessment_date": "2026-01-27",
+        "weather_data": {
+            "location": {
+                "name": "Jakarta",
+                "region": "Jakarta Raya",
+                "country": "Indonesia"
+            },
+            "current": {
+                "temp_c": 26.8,
+                "feelslike_c": 29.6,
+                "wind_mph": 2.5,
+                "precip_mm": 0.02,
+                "uv": 0.0
+            },
+            "forecast": {
+                "forecastday": [
+                    {
+                        "date": "2026-01-27",
+                        "day": {
+                            "maxtemp_c": 28.8,
+                            "mintemp_c": 25.9,
+                            "daily_chance_of_rain": 99
+                        }
+                    }
+                ]
+            }
+        },
+        "heuristic_output": {
+            "decision": "GO",
+            "notes": "Conditions are favorable for your activity.",
+            "weighted_score": 82.5,
+            "hard_stop_reasons": [],
+            "reasons": []
+        },
+        "ai_explanation": {
+            "explanation": "**Conditions appear favorable for outdoor activities.** The current weather metrics suggest safe conditions. However, always:\n\n\u2705 Check the latest weather updates before departing\n\n\u2705 Inform someone of your plans and expected return time\n\n\u2705 Pack essential safety gear (first aid, navigation, communication)\n\n\u2705 Bring layers and rain protection - weather can change quickly\n\n\u2705 Monitor conditions throughout your activity\n\nStay alert to any weather changes and trust your judgment. If conditions deteriorate, don't hesitate to turn back."
+        }
+    },
+    {
+        "report_id": "rep_63deb19a260d4bf8a7dae0c151680ac6",
+        "assessment_timestamp_utc": "2026-01-27T20:53:27.599385+00:00",
+        "location_name": "Edinburgh",
+        "assessment_date": "2026-01-27",
+        "weather_data": {
+            "location": {
+                "name": "Edinburgh",
+                "region": "City of Edinburgh",
+                "country": "United Kingdom"
+            },
+            "current": {
+                "temp_c": 3.8,
+                "feelslike_c": -1.4,
+                "wind_mph": 18.3,
+                "precip_mm": 0.0,
+                "uv": 0.0
+            },
+            "forecast": {
+                "forecastday": [
+                    {
+                        "date": "2026-01-27",
+                        "day": {
+                            "maxtemp_c": 4.2,
+                            "mintemp_c": 2.9,
+                            "daily_chance_of_rain": 99
+                        }
+                    }
+                ]
+            }
+        },
+        "heuristic_output": {
+            "decision": "GO",
+            "notes": "Conditions are favorable for your activity.",
+            "weighted_score": 100.0,
+            "hard_stop_reasons": [],
+            "reasons": []
+        },
+        "ai_explanation": {
+            "explanation": "**Conditions appear favorable for outdoor activities.** The current weather metrics suggest safe conditions. However, always:\n\n\u2705 Check the latest weather updates before departing\n\n\u2705 Inform someone of your plans and expected return time\n\n\u2705 Pack essential safety gear (first aid, navigation, communication)\n\n\u2705 Bring layers and rain protection - weather can change quickly\n\n\u2705 Monitor conditions throughout your activity\n\nStay alert to any weather changes and trust your judgment. If conditions deteriorate, don't hesitate to turn back."
+        }
+    },
+    {
+        "report_id": "rep_bd04ebbf6901419e83b2f89a9c8e4e62",
+        "assessment_timestamp_utc": "2026-01-27T20:53:41.347162+00:00",
+        "location_name": "Isle Of Skye",
+        "assessment_date": "2026-01-27",
+        "weather_data": {
+            "location": {
+                "name": "Isle Of Skye",
+                "region": "Highland",
+                "country": "United Kingdom"
+            },
+            "current": {
+                "temp_c": 4.1,
+                "feelslike_c": 0.7,
+                "wind_mph": 9.2,
+                "precip_mm": 0.0,
+                "uv": 0.0
+            },
+            "forecast": {
+                "forecastday": [
+                    {
+                        "date": "2026-01-27",
+                        "day": {
+                            "maxtemp_c": 5.6,
+                            "mintemp_c": 4.0,
+                            "daily_chance_of_rain": 87
+                        }
+                    }
+                ]
+            }
+        },
+        "heuristic_output": {
+            "decision": "GO",
+            "notes": "Conditions are favorable for your activity.",
+            "weighted_score": 100.0,
+            "hard_stop_reasons": [],
+            "reasons": []
+        },
+        "ai_explanation": {
+            "explanation": "**Conditions appear favorable for outdoor activities.** The current weather metrics suggest safe conditions. However, always:\n\n\u2705 Check the latest weather updates before departing\n\n\u2705 Inform someone of your plans and expected return time\n\n\u2705 Pack essential safety gear (first aid, navigation, communication)\n\n\u2705 Bring layers and rain protection - weather can change quickly\n\n\u2705 Monitor conditions throughout your activity\n\nStay alert to any weather changes and trust your judgment. If conditions deteriorate, don't hesitate to turn back."
+        }
+    },
+    {
+        "report_id": "rep_05670804e52f46dfb1c00747a84e2295",
+        "assessment_timestamp_utc": "2026-01-27T20:53:53.472000+00:00",
+        "location_name": "Bandung",
+        "assessment_date": "2026-01-27",
+        "weather_data": {
+            "location": {
+                "name": "Bandung",
+                "region": "West Java",
+                "country": "Indonesia"
+            },
+            "current": {
+                "temp_c": 20.0,
+                "feelslike_c": 20.0,
+                "wind_mph": 2.5,
+                "precip_mm": 0.0,
+                "uv": 0.0
+            },
+            "forecast": {
+                "forecastday": [
+                    {
+                        "date": "2026-01-27",
+                        "day": {
+                            "maxtemp_c": 26.1,
+                            "mintemp_c": 19.0,
+                            "daily_chance_of_rain": 99
+                        }
+                    }
+                ]
+            }
+        },
+        "heuristic_output": {
+            "decision": "GO",
+            "notes": "Conditions are favorable for your activity.",
+            "weighted_score": 100.0,
+            "hard_stop_reasons": [],
+            "reasons": []
+        },
+        "ai_explanation": {
+            "explanation": "**Conditions appear favorable for outdoor activities.** The current weather metrics suggest safe conditions. However, always:\n\n\u2705 Check the latest weather updates before departing\n\n\u2705 Inform someone of your plans and expected return time\n\n\u2705 Pack essential safety gear (first aid, navigation, communication)\n\n\u2705 Bring layers and rain protection - weather can change quickly\n\n\u2705 Monitor conditions throughout your activity\n\nStay alert to any weather changes and trust your judgment. If conditions deteriorate, don't hesitate to turn back."
+        }
+    },
+    {
+        "report_id": "rep_060e3139fe1b4ef5a6138b00498f7a5f",
+        "assessment_timestamp_utc": "2026-01-27T20:54:28.035719+00:00",
+        "location_name": "Bandung",
+        "assessment_date": "2026-01-30",
+        "weather_data": {
+            "location": {
+                "name": "Bandung",
+                "region": "West Java",
+                "country": "Indonesia"
+            },
+            "current": {
+                "temp_c": 20.3,
+                "feelslike_c": 20.3,
+                "wind_mph": 2.0,
+                "precip_mm": 0.5,
+                "uv": 0.0
+            },
+            "forecast": {
+                "forecastday": [
+                    {
+                        "date": "2026-01-30",
+                        "day": {
+                            "maxtemp_c": 21.3,
+                            "mintemp_c": 19.4,
+                            "daily_chance_of_rain": 85
+                        }
+                    }
+                ]
+            }
+        },
+        "heuristic_output": {
+            "decision": "GO",
+            "notes": "Conditions are favorable for your activity.",
+            "weighted_score": 80.0,
+            "hard_stop_reasons": [],
+            "reasons": []
+        },
+        "ai_explanation": {
+            "explanation": "**Conditions appear favorable for outdoor activities.** The current weather metrics suggest safe conditions. However, always:\n\n\u2705 Check the latest weather updates before departing\n\n\u2705 Inform someone of your plans and expected return time\n\n\u2705 Pack essential safety gear (first aid, navigation, communication)\n\n\u2705 Bring layers and rain protection - weather can change quickly\n\n\u2705 Monitor conditions throughout your activity\n\nStay alert to any weather changes and trust your judgment. If conditions deteriorate, don't hesitate to turn back."
+        }
+    },
+    {
+        "report_id": "rep_f41c8305a6d64af2b31da67393f4f1ab",
+        "assessment_timestamp_utc": "2026-01-27T20:57:45.743341+00:00",
+        "location_name": "Coventry",
+        "assessment_date": "2026-01-27",
+        "weather_data": {
+            "location": {
+                "name": "Coventry",
+                "region": "West Midlands",
+                "country": "United Kingdom"
+            },
+            "current": {
+                "temp_c": 4.4,
+                "feelslike_c": -1.3,
+                "wind_mph": 23.3,
+                "precip_mm": 3.1,
+                "uv": 0.0
+            },
+            "forecast": {
+                "forecastday": [
+                    {
+                        "date": "2026-01-27",
+                        "day": {
+                            "maxtemp_c": 8.5,
+                            "mintemp_c": 4.1,
+                            "daily_chance_of_rain": 100
+                        }
+                    }
+                ]
+            }
+        },
+        "heuristic_output": {
+            "decision": "MAYBE",
+            "notes": "Conditions are marginal. Proceed with caution and be prepared for changes.",
+            "weighted_score": 70.0,
+            "hard_stop_reasons": [],
+            "reasons": []
+        },
+        "ai_explanation": {
+            "explanation": "**Conditions are borderline - proceed with caution.** Our analysis indicates marginal weather conditions. Consider these recommendations:\n\n\u26a0\ufe0f Re-check weather forecasts from multiple sources\n\n\u26a0\ufe0f Have a backup plan and clear turnaround criteria\n\n\u26a0\ufe0f Ensure all participants are experienced and properly equipped\n\n\u26a0\ufe0f Start early to allow time for changing conditions\n\n\u26a0\ufe0f Be prepared to cancel or turn back if conditions worsen\n\nBorderline conditions require extra vigilance. It's always better to postpone than to take unnecessary risks. Your safety is the priority."
+        }
+    },
+    {
+        "report_id": "rep_25f6819cdbb4413bb79190a58f9d5df7",
+        "assessment_timestamp_utc": "2026-01-27T21:08:12.809577+00:00",
+        "location_name": "Coventry",
+        "assessment_date": "2026-01-27",
+        "weather_data": {
+            "location": {
+                "name": "Coventry",
+                "region": "West Midlands",
+                "country": "United Kingdom"
+            },
+            "current": {
+                "temp_c": 4.4,
+                "feelslike_c": -1.3,
+                "wind_mph": 23.3,
+                "precip_mm": 3.1,
+                "uv": 0.0
+            },
+            "forecast": {
+                "forecastday": [
+                    {
+                        "date": "2026-01-27",
+                        "day": {
+                            "maxtemp_c": 8.5,
+                            "mintemp_c": 4.1,
+                            "daily_chance_of_rain": 100
+                        }
+                    }
+                ]
+            }
+        },
+        "heuristic_output": {
+            "decision": "MAYBE",
+            "notes": "Conditions are marginal. Proceed with caution and be prepared for changes.",
+            "weighted_score": 70.0,
+            "hard_stop_reasons": [],
+            "reasons": []
+        },
+        "ai_explanation": {
+            "explanation": "**Conditions are borderline - proceed with caution.** Our analysis indicates marginal weather conditions. Consider these recommendations:\n\n\u26a0\ufe0f Re-check weather forecasts from multiple sources\n\n\u26a0\ufe0f Have a backup plan and clear turnaround criteria\n\n\u26a0\ufe0f Ensure all participants are experienced and properly equipped\n\n\u26a0\ufe0f Start early to allow time for changing conditions\n\n\u26a0\ufe0f Be prepared to cancel or turn back if conditions worsen\n\nBorderline conditions require extra vigilance. It's always better to postpone than to take unnecessary risks. Your safety is the priority."
+        }
+    },
+    {
+        "report_id": "rep_e93b7b56202a49808830b6b4acad94be",
+        "assessment_timestamp_utc": "2026-01-27T21:11:36.801524+00:00",
+        "location_name": "Coventry",
+        "assessment_date": "2026-01-27",
+        "weather_data": {
+            "location": {
+                "name": "Coventry",
+                "region": "West Midlands",
+                "country": "United Kingdom"
+            },
+            "current": {
+                "temp_c": 4.4,
+                "feelslike_c": -1.3,
+                "wind_mph": 23.3,
+                "precip_mm": 3.1,
+                "uv": 0.0
+            },
+            "forecast": {
+                "forecastday": [
+                    {
+                        "date": "2026-01-27",
+                        "day": {
+                            "maxtemp_c": 8.5,
+                            "mintemp_c": 4.1,
+                            "daily_chance_of_rain": 100
+                        }
+                    }
+                ]
+            }
+        },
+        "heuristic_output": {
+            "decision": "MAYBE",
+            "notes": "Conditions are marginal. Proceed with caution and be prepared for changes.",
+            "weighted_score": 70.0,
+            "hard_stop_reasons": [],
+            "reasons": []
+        },
+        "ai_explanation": {
+            "explanation": "**Conditions are borderline - proceed with caution.** Our analysis indicates marginal weather conditions. Consider these recommendations:\n\n\u26a0\ufe0f Re-check weather forecasts from multiple sources\n\n\u26a0\ufe0f Have a backup plan and clear turnaround criteria\n\n\u26a0\ufe0f Ensure all participants are experienced and properly equipped\n\n\u26a0\ufe0f Start early to allow time for changing conditions\n\n\u26a0\ufe0f Be prepared to cancel or turn back if conditions worsen\n\nBorderline conditions require extra vigilance. It's always better to postpone than to take unnecessary risks. Your safety is the priority."
+        }
+    },
+    {
+        "report_id": "rep_1e554198e2274a71887d39320d8b95b9",
+        "assessment_timestamp_utc": "2026-01-27T21:18:29.714564+00:00",
+        "location_name": "Coventry",
+        "assessment_date": "2026-01-27",
+        "weather_data": {
+            "location": {
+                "name": "Coventry",
+                "region": "West Midlands",
+                "country": "United Kingdom"
+            },
+            "current": {
+                "temp_c": 4.4,
+                "feelslike_c": -1.3,
+                "wind_mph": 23.3,
+                "precip_mm": 3.1,
+                "uv": 0.0
+            },
+            "forecast": {
+                "forecastday": [
+                    {
+                        "date": "2026-01-27",
+                        "day": {
+                            "maxtemp_c": 8.5,
+                            "mintemp_c": 4.1,
+                            "daily_chance_of_rain": 100
+                        }
+                    }
+                ]
+            }
+        },
+        "heuristic_output": {
+            "decision": "MAYBE",
+            "notes": "Conditions are marginal. Proceed with caution and be prepared for changes.",
+            "weighted_score": 70.0,
+            "hard_stop_reasons": [],
+            "reasons": []
+        },
+        "ai_explanation": {
+            "explanation": "**Conditions are borderline - proceed with caution.** Our analysis indicates marginal weather conditions. Consider these recommendations:\n\n\u26a0\ufe0f Re-check weather forecasts from multiple sources\n\n\u26a0\ufe0f Have a backup plan and clear turnaround criteria\n\n\u26a0\ufe0f Ensure all participants are experienced and properly equipped\n\n\u26a0\ufe0f Start early to allow time for changing conditions\n\n\u26a0\ufe0f Be prepared to cancel or turn back if conditions worsen\n\nBorderline conditions require extra vigilance. It's always better to postpone than to take unnecessary risks. Your safety is the priority."
+        }
+    },
+    {
+        "report_id": "rep_c908e4c13bb343848d983158c7bedc20",
+        "assessment_timestamp_utc": "2026-01-28T10:50:26.088959+00:00",
+        "location_name": "Coventry",
+        "assessment_date": "2026-01-28",
+        "weather_data": {
+            "location": {
+                "name": "Coventry",
+                "region": "West Midlands",
+                "country": "United Kingdom"
+            },
+            "current": {
+                "temp_c": 4.4,
+                "feelslike_c": 1.9,
+                "wind_mph": 6.5,
+                "precip_mm": 0.0,
+                "uv": 0.0
+            },
+            "forecast": {
+                "forecastday": [
+                    {
+                        "date": "2026-01-28",
+                        "day": {
+                            "maxtemp_c": 6.8,
+                            "mintemp_c": 0.7,
+                            "daily_chance_of_rain": 0
+                        }
+                    }
+                ]
+            }
+        },
+        "heuristic_output": {
+            "decision": "GO",
+            "notes": "Conditions are favorable for your activity.",
+            "weighted_score": 100.0,
+            "hard_stop_reasons": [],
+            "reasons": []
+        },
+        "ai_explanation": {
+            "explanation": "Excellent news for your outdoor adventure in Coventry! The guideline suggests a confident 'GO' because conditions are highly favorable, with absolutely no chance of rain or precipitation and only light winds at 6.5 mph. While the temperature is cool at 4.4\u00b0C (feels like 1.9\u00b0C), these dry and calm conditions make it an ideal time to head outside\u2014just remember to dress warmly!"
+        }
+    },
+    {
+        "report_id": "rep_65be452520804319a753ce186d8ba723",
+        "assessment_timestamp_utc": "2026-01-28T17:13:49.992792+00:00",
+        "location_name": "Coventry",
+        "assessment_date": "2026-01-28",
+        "weather_data": {
+            "location": {
+                "name": "Coventry",
+                "region": "West Midlands",
+                "country": "United Kingdom"
+            },
+            "current": {
+                "temp_c": 4.4,
+                "feelslike_c": 1.9,
+                "wind_mph": 6.5,
+                "precip_mm": 0.0,
+                "uv": 0.0
+            },
+            "forecast": {
+                "forecastday": [
+                    {
+                        "date": "2026-01-28",
+                        "day": {
+                            "maxtemp_c": 7.6,
+                            "mintemp_c": 1.1,
+                            "daily_chance_of_rain": 0
+                        }
+                    }
+                ]
+            }
+        },
+        "heuristic_output": {
+            "decision": "GO",
+            "notes": "Conditions are favorable for your activity.",
+            "weighted_score": 100.0,
+            "hard_stop_reasons": [],
+            "reasons": []
+        },
+        "ai_explanation": {
+            "explanation": "**Weather Summary:** The conditions are highly favorable for outdoor activities with no precipitation, light wind, and a low UV index. While the air temperature is cool, the 'feels like' temperature is just above freezing, making it comfortable with appropriate attire.\n\n**Practical Recommendations:**\n1.  **Clothing:** Dress in multiple layers to manage the 1.9\u00b0C 'feels like' temperature. A wicking base layer, an insulating middle layer (like fleece), and a wind-resistant outer shell are ideal. Don't forget a warm hat and gloves.\n2.  **Safety Tip:** Stay adequately hydrated and fueled. Even in cold weather, fluid loss can occur, and proper nutrition helps your body maintain warmth.\n3.  **Activity Tip:** Inform someone of your activity plans, including your route and estimated return time, even for local outings. Carry a fully charged phone for emergencies."
+        }
+    },
+    {
+        "report_id": "rep_f648cd34c91b4bf9a8bce173f297c077",
+        "assessment_timestamp_utc": "2026-02-02T19:27:25.167269+00:00",
+        "location_name": "Coventry",
+        "assessment_date": "2026-02-02",
+        "weather_data": {
+            "location": {
+                "name": "Coventry",
+                "region": "West Midlands",
+                "country": "United Kingdom"
+            },
+            "current": {
+                "temp_c": 5.8,
+                "feelslike_c": 3.6,
+                "wind_mph": 6.3,
+                "precip_mm": 0.05,
+                "uv": 0.0
+            },
+            "forecast": {
+                "forecastday": [
+                    {
+                        "date": "2026-02-02",
+                        "day": {
+                            "maxtemp_c": 7.1,
+                            "mintemp_c": 5.3,
+                            "daily_chance_of_rain": 89
+                        }
+                    }
+                ]
+            }
+        },
+        "heuristic_output": {
+            "decision": "GO",
+            "notes": "Conditions are favorable for your activity.",
+            "weighted_score": 100.0,
+            "hard_stop_reasons": [],
+            "reasons": []
+        },
+        "ai_explanation": {
+            "explanation": "**Weather Summary:** Despite a chilly \"feels like\" temperature of 3.6\u00b0C and a high chance of light rain, overall conditions are deemed favorable for your activity, resulting in a \"GO\" decision and a high safety score.\n\n**Practical Recommendations:**\n1.  **Clothing:** Dress in warm, moisture-wicking layers, including a waterproof and windproof outer shell jacket and trousers to stay dry and combat the cold temperatures and potential rain.\n2.  **Safety Tip:** Be aware that surfaces may become slippery due to the light precipitation and cold, so maintain sure footing and watch for slick areas.\n3.  **Activity Tip:** Protect any electronic devices or sensitive gear from moisture, as there is a significant chance of rain throughout your outing."
+        }
+    }
+]

@@ -1,0 +1,45 @@
+# utils/constants.py
+
+# Metric Availability
+MIN_METRICS_FOR_DECISION = 2
+
+# Category to Score Mapping
+SCORE_GREEN = 100
+SCORE_AMBER = 50
+SCORE_RED = 0
+
+# Wind Category Thresholds (mph)
+WIND_AMBER_THRESHOLD = 20
+WIND_RED_THRESHOLD = 32
+
+# Thermal Stress Category Thresholds (Celsius)
+HEAT_INDEX_USE_THRESHOLD = 27
+HEAT_INDEX_AMBER_THRESHOLD = 27
+HEAT_INDEX_RED_THRESHOLD = 41
+
+WIND_CHILL_USE_THRESHOLD = -10
+WIND_CHILL_AMBER_THRESHOLD = -10
+WIND_CHILL_RED_THRESHOLD = -28
+
+# UV Category Thresholds
+UV_INDEX_AMBER_THRESHOLD = 3
+UV_INDEX_RED_THRESHOLD = 8
+
+# Precipitation Category Thresholds
+POP_IGNORE_RATE_THRESHOLD = 20
+POP_AMBER_THRESHOLD = 21
+POP_RED_THRESHOLD = 50 # pop_percent > 50
+
+# Precipitation Rate Thresholds (mm/hr)
+PRECIP_RATE_AMBER_THRESHOLD = 0.5
+PRECIP_RATE_RED_THRESHOLD = 4.0
+
+# Metric Weights
+WIND_WEIGHT = 0.20
+THERMAL_WEIGHT = 0.35
+PRECIP_WEIGHT = 0.40
+UV_WEIGHT = 0.05
+
+# Final Decision Thresholds (Weighted Score)
+GO_THRESHOLD = 75
+MAYBE_THRESHOLD = 50

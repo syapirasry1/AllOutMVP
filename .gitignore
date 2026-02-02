@@ -1,0 +1,91 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual Environment
+venv/
+env/
+ENV/
+.venv/
+.ENV/
+env.bak/
+venv.bak/
+
+# IDE - VSCode
+.vscode/
+*.code-workspace
+
+# IDE - PyCharm
+.idea/
+*.iml
+*.iws
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# pytest
+.pytest_cache/
+.tox/
+.coverage
+.coverage.*
+htmlcov/
+*.cover
+.hypothesis/
+
+# Environment variables (IMPORTANT - keeps API keys private)
+.env
+.env.local
+.env.*.local
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*~
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# MyPy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# Data files (optional - uncomment if you don't want to include logs)
+# data/assessment_logs.json
+
+# BMAD output (optional - uncomment if you don't want to include planning docs)
+# _bmad-output/
+
+echo "
+# Agent/AI workflow folders
+.agent/
+.claude/
+.codeium/
+.cursor/
+.gemini/
+.github/agents/
+.opencode/
+.windsurf/
+
+# BMAD output (if you want to keep it private)
+# _bmad-output/
+" >> .gitignore

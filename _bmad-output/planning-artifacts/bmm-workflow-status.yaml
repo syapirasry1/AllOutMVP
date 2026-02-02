@@ -1,0 +1,12 @@
+product-brief:
+  status: "completed"
+  file: "_bmad-output/planning-artifacts/product-brief-AllOut-2026-01-22.md"
+  completed_at: "2026-01-22T22:21:29Z"
+product-requirements-document:
+  status: "completed"
+  file: "_bmad-output/planning-artifacts/prd.md"
+  completed_at: "2026-01-23T12:00:00Z"
+create-architecture:
+  status: "complete"
+  file: "_bmad-output/planning-artifacts/architecture.md"
+  completed_at: "2026-01-24"
