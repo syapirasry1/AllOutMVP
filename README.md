@@ -85,8 +85,8 @@ The AI (Gemini) is then used **only to explain and contextualize** this decision
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/yourusername/AllOut.git
-   cd AllOut
+   git clone https://github.com/syapirasry1/AllOutMVP.git
+   cd AllOutMVP
    ```
 
 2. **Create Virtual Environment**
@@ -322,5 +322,3 @@ I acknowledge that the current engine calculation, while robust for an MVP, lack
 - [ ] Integration with fitness tracking apps and third-party platforms via API
 - [ ] Community integration for sharing plans and real-time conditions
 - [ ] Advanced analytics for commercial outdoor activity operators
-
----
