@@ -104,7 +104,7 @@ The AI (Gemini) is then used **only to explain and contextualize** this decision
    
    Create a `.env` file in the project root:
    ```env
-   WEATHER_API_KEY=your_weatherapi_key_here
+   WEATHERAPI_KEY=your_weatherapi_key_here
    GEMINI_API_KEY=your_gemini_api_key_here
    ```
 
@@ -253,12 +253,7 @@ AllOut/
 
 ## 🔗 GitHub Repository
 
-**Repository URL**: [https://github.com/yourusername/AllOut](https://github.com/yourusername/AllOut)
-
-**View Version History**:
-- [Releases](https://github.com/yourusername/AllOut/releases) - All tagged versions
-- [Commits](https://github.com/yourusername/AllOut/commits/main) - Full development history
-- [Issues](https://github.com/yourusername/AllOut/issues) - Bug tracking and feature requests
+**Repository URL**: [https://github.com/syapirasry1/AllOutMVP](https://github.com/syapirasry1/AllOutMVP)
 
 ---
 
@@ -322,3 +317,5 @@ I acknowledge that the current engine calculation, while robust for an MVP, lack
 - [ ] Integration with fitness tracking apps and third-party platforms via API
 - [ ] Community integration for sharing plans and real-time conditions
 - [ ] Advanced analytics for commercial outdoor activity operators
+
+---
